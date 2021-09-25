@@ -1,35 +1,58 @@
-.encabezado {
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+.header {
     background: blue ;
     border: 2px black solid;
-    box-sizing: border-box;
-    padding: 5px;
+    max-width: 100vw;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-/* .main {
-    border: 2px black solid;
-    justify-content: flex-end;
-} */
-
-.imagen_Desc {
-    background: cadetblue;
-    flex-direction: column;
-    border:6px darkblue solid;
-    width: 40%;
-    box-sizing: border-box;
+.container__main {
+  display: flex;
+  max-width: 100vw;
+  height: 80%;
+  align-items: center;
+  justify-content: center;
 }
 
-.imagen {
-    border:5px tan solid;
-    width: 30%;
+.container__img {
+  max-width: 50vw;
+}
+
+.container__form {
+  max-width: 50vw;
+  padding-left: 3em;
+}
+
+.imc-img {
+  width: 20em;
+  height: 10em;
+  margin-bottom: 4em;
+}
+
+.article__desc {
+  width: 350px;
 }
 
 .formulario {
     background: chartreuse;
     border:6px darkblue solid;
-    width: 40%;
-    box-sizing: border-box;
 }
 
 .footer {
-    background: crimson;
+  height: 10%;
+  background: crimson;
 }

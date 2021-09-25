@@ -6,21 +6,24 @@
         <link rel="stylesheet" href="estilos.css">   
     </head>
     <body>
-        <header>
-        
+        <header class="container header">
                 <h1 class="encabezado">Cálculo de IMC</h1>
         </header>
-       
-        <div class="main">
-            <div class="imagen_Desc">
-                <img class="imagen" src="https://p5y7s8q3.rocketcdn.me/wp-content/uploads/2020/07/blog_IMC.jpg" alt="">
-                <h2>Indice de masa corporal</h2>
-                <article>El índice de masa corporal (IMC) es un número que se calcula con base en el peso y la estatura de la persona. 
+
+        <div class="container container__main">
+            <div class="container__img">
+                <img class="imc-img" src="https://p5y7s8q3.rocketcdn.me/wp-content/uploads/2020/07/blog_IMC.jpg" alt="">
+                <article class="article__desc">
+                  <h2>Indice de masa corporal</h2>
+                  <p>
+                    El índice de masa corporal (IMC) es un número que se calcula con base en el peso y la estatura de la persona. 
                     Para la mayoría de las personas, el IMC es un indicador confiable de la gordura y se usa para identificar las 
-                    categorías de peso que pueden llevar a problemas de salud.</article><br>
+                    categorías de peso que pueden llevar a problemas de salud.
+                  </p>
+                  </article>
             </div>
-              
-            <div class="formulario">
+
+            <div class="container__form">
                 <form action="">
                     <label for="genero">Género: </label>
                     <select name="genero">
@@ -33,7 +36,6 @@
                     <input required name="apellido" ><br><br>
                     <label for="correo">Ingrese su correo electronico: </label>
                     <input required name="correo" placeholder="ejemplo@ejemplo.com" ><br><br>
-                    
                     <label for="peso">Ingrese su peso: </label>
                     <input required name="peso" placeholder="Kilogramos"><br><br>
                     <label for="altura">Ingrese su altura: </label>
