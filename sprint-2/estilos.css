@@ -1,0 +1,35 @@
+.encabezado {
+    background: blue ;
+    border: 2px black solid;
+    box-sizing: border-box;
+    padding: 5px;
+}
+
+/* .main {
+    border: 2px black solid;
+    justify-content: flex-end;
+} */
+
+.imagen_Desc {
+    background: cadetblue;
+    flex-direction: column;
+    border:6px darkblue solid;
+    width: 40%;
+    box-sizing: border-box;
+}
+
+.imagen {
+    border:5px tan solid;
+    width: 30%;
+}
+
+.formulario {
+    background: chartreuse;
+    border:6px darkblue solid;
+    width: 40%;
+    box-sizing: border-box;
+}
+
+.footer {
+    background: crimson;
+}
