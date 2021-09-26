@@ -11,15 +11,18 @@ body {
 }
 
 .header {
-    background: #D7CBB2;
-    border: 2px black solid;
+    background: #69aebe;
     max-width: 100vw;
     height: 10%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     color: white;
     font-family: inherit;
+}
+
+.header__title {
+  padding-right: 52px;
 }
 
 .container__main {
@@ -28,7 +31,8 @@ body {
   height: 70%;
   align-items: center;
   justify-content: center;
-  background:  #FCEED8;
+  background:  #f1c385
+  ;
 }
 
 .container__img {
@@ -48,7 +52,7 @@ body {
 
 .article__desc {
   width: 350px;
-  font: oblique bold 90% cursive;  
+  text-align: justify;
 }
 
 .formulario {
@@ -58,9 +62,10 @@ body {
 
 .footer {
   height: 20%;
-  background: #DEB48E;
+  background: #FFFF;
   text-align: left;
   display: flex;
+  max-width: 100vw;
 }
 
 .team {
@@ -74,16 +79,16 @@ body {
     margin-top: 5px;
 }
 
-.img_syntax{
-   width: 20em; 
-   height: 2em;
-   margin-top: 4%;
-   margin-left: 40%;
+button {
+  background-color: #69aebe;
+  color: white;
+  padding: 8px;
+  cursor: pointer;
+  border-radius: 3px;
+  width: 150px;
+  border: none;
 }
 
-h2 {
-    padding: 15px;
-    text-align: center;
-    color: rgb(94, 87, 28);
-    font-size: 4vh;
+input {
+  height: 15px;
 }
