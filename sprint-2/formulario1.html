@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <title>Equipo #3 IMC</title>
-        <link rel="stylesheet" href="estilos.css">
+      <meta charset="utf-8">
+      <title>Equipo #3 IMC</title>
+      <link rel="stylesheet" href="estilos.css">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100&display=swap" rel="stylesheet">
     </head>
 
 
     <body>
         <header class="container header">
-          <img class="img_footer" src="imagenes/mintic.png" alt="">
+          <img class="img__header" src="imagenes/mintic.png" alt="">
           <h1 class="header__title">Cálculo de IMC</h1>
         </header>
 
@@ -31,30 +35,33 @@
                     <select name="genero">
                         <option value="1">Mujer</option>
                         <option value="2">Hombre</option>
-                    </select><br><br>
-                    <label for="nombre">Ingrese su nombre: </label>
-                    <input required name="nombre" ><br><br>
-                    <label for="apellido">Ingrese su apellido: </label>
-                    <input required name="apellido" ><br><br>
-                    <label for="correo">Ingrese su correo electronico: </label>
-                    <input required name="correo" placeholder="ejemplo@ejemplo.com" ><br><br>
-                    <label for="peso">Ingrese su peso: </label>
-                    <input required name="peso" placeholder="Kilogramos"><br><br>
-                    <label for="altura">Ingrese su altura: </label>
-                    <input required name="altura" placeholder="metros"><br><br>
-                    <button type="reset">Cancelar</button>
-                    <button type="submit">Calcula!</button>
+                    </select>
+                    <label for="nombre">Ingrese su nombre </label>
+                    <input required name="nombre" >
+                    <label for="apellido">Ingrese su apellido </label>
+                    <input required name="apellido" >
+                    <label for="correo">Ingrese su correo electronico </label>
+                    <input required name="correo" placeholder="ejemplo@ejemplo.com" >
+                    <label for="peso">Ingrese su peso </label>
+                    <input required name="peso" placeholder="Kilogramos">
+                    <label for="altura">Ingrese su altura </label>
+                    <input required name="altura" placeholder="metros">
+                    <div class="from__button__container">
+                      <button type="reset">Cancelar</button>
+                      <button type="submit">Calcula!</button>
+                    </div>
                 </form>
             </div>
         </div>
         <div class="footer">
-            <ul class="team">
-                <li>Pinky</li>
-                <li>Panda</li>
-                <li>Rumpelstilzchen</li>
-                <li>The wolf</li>
-                <li>Hades</li>
-            </ul>
+          <img  class="img__footer" src="./imagenes/syntaxError.png" alt="" srcset="">
+          <div class="container__members">
+            <div class="member__name">Pinky</div>
+            <div class="member__name">Panda</div>
+            <div class="member__name">Rumpelstilzchen</div>
+            <div class="member__name">The wolf</div>
+            <div class="member__name">Hades</div>
+          </div>
         </div>
     </body>
 
