@@ -8,6 +8,53 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100&display=swap" rel="stylesheet">
+      <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+      <script type="text/javascript">
+        google.charts.load('current', {packages: ['corechart']});
+        google.charts.setOnLoadCallback(dibujarGraficoBarras);
+
+        function cargarData3 (){
+            var votacionImc = new google.visualization.DataTable();
+            votacionImc.addColumn('string','nombre');
+            votacionImc.addColumn('number','votos');
+            //pizza 10, hambuerguesas 8, perros 5
+            votacionImc.addRows([
+                ['peso insuficiente',10,],
+                ['peso normal',8],
+                ['sobrepeso',5],
+                ['obesidad',3]
+            ])
+            var votacionImc = new google.visualization.arrayToDataTable([
+                ['Element', 'Density', { role: 'style' }],
+                ['peso insuficiente', 5, '#a12299'],            // RGB value
+                ['peso normal', 9, 'yellow'],            // English color name
+                ['sobrepeso', 6, 'green'],
+                ['obesidad',3, 'red']
+            ]);
+            return votacionImc;
+
+        }
+
+        function dibujarGraficoBarras() {
+            let data = cargarData3();
+            var options = {'title':'Estadisticas IMC',
+                 'width':400,
+                 'height':350,
+                 'legend': { position: 'top', maxLines: 3},
+                 backgroundColor: '#B3D6E4',
+                 legendTextStyle: { color: '#FFF' },
+                 titleTextStyle: { color: '#201C41' }
+                //  'margin' :100
+                //  slices: {  0: {color: 'yellow'},
+                //         1: {color: 'green'},
+                //         2: {color: 'black'}
+                // }
+            }
+            //PieChart,Linechart,ColumnChart,Line,Sankey,BarChart
+            var chart = new google.visualization.BarChart(document.getElementById('graficoImc'));
+            chart.draw(data, options);
+        }
+    </script>
     </head>
 
 
@@ -52,6 +99,10 @@
                     </div>
                 </form>
             </div>
+            <div class="container_graphic">
+              <div id="graficoImc" style=" width: 406px; height: 356px; border: 3px rgb(245, 248, 250) solid; "></div>
+            </div>
+            
         </div>
         <div class="footer">
           <img  class="img__footer" src="./imagenes/syntaxError.png" alt="" srcset="">

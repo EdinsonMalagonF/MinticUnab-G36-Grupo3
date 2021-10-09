@@ -43,6 +43,15 @@ body {
   max-width: 50vw;
   padding-left: 3em;
 }
+.container_graphic {
+  max-width: 30vw;
+  padding-left: 3em;
+  padding-top: 0em;
+  margin-top: -1em;
+  /* border: 2px #69aebe solid ; */
+  /* font-family: inherit; */
+  /* background:  #81f33f; */
+}
 
 .imc-img {
   width: 22em;
