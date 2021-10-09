@@ -17,7 +17,6 @@
             var votacionImc = new google.visualization.DataTable();
             votacionImc.addColumn('string','nombre');
             votacionImc.addColumn('number','votos');
-            //pizza 10, hambuerguesas 8, perros 5
             votacionImc.addRows([
                 ['peso insuficiente',10,],
                 ['peso normal',8],
@@ -37,21 +36,16 @@
 
         function dibujarGraficoBarras() {
             let data = cargarData3();
-            var options = {'title':'Estadisticas IMC',
-                 'width':400,
-                 'height':350,
-                 'legend': { position: 'top', maxLines: 3},
-                 backgroundColor: '#B3D6E4',
-                 legendTextStyle: { color: '#FFF' },
-                 titleTextStyle: { color: '#201C41' }
-                //  'margin' :100
-                //  slices: {  0: {color: 'yellow'},
-                //         1: {color: 'green'},
-                //         2: {color: 'black'}
-                // }
+            var options = {'title':'Distribución IMC en Colombia',
+                'width':400,
+                'height':350,
+                'legend': { position: 'top', maxLines: 3},
+                backgroundColor: '#69aebe',
+                legendTextStyle: { color: '#FFF' },
+                titleTextStyle: { color: '#201C41' }
             }
-            //PieChart,Linechart,ColumnChart,Line,Sankey,BarChart
-            var chart = new google.visualization.BarChart(document.getElementById('graficoImc'));
+
+            var chart = new google.visualization.PieChart(document.getElementById('graficoImc'));
             chart.draw(data, options);
         }
     </script>
@@ -99,10 +93,9 @@
                     </div>
                 </form>
             </div>
-            <div class="container_graphic">
+            <div class="container__chart">
               <div id="graficoImc" style=" width: 406px; height: 356px; border: 3px rgb(245, 248, 250) solid; "></div>
             </div>
-            
         </div>
         <div class="footer">
           <img  class="img__footer" src="./imagenes/syntaxError.png" alt="" srcset="">
