@@ -32,7 +32,7 @@ body {
   align-items: center;
   justify-content: space-evenly;
   background:  #FFFF;
-  border-bottom: 1px so #69aebe;
+  border-bottom: 1px solid #69aebe;
 }
 
 .container__img {
